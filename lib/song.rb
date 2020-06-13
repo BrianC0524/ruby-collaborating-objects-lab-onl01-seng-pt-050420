@@ -35,7 +35,7 @@ class Song
     
   end
   
-  def artist_name=(name)
+  def artist_name(name)
     
     self.artist = Artist.all.find {|artist| artist.name == name} || Artist.new(name)
     
